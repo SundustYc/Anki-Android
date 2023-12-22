@@ -1,0 +1,157 @@
+2023-12-23 01:03:09.284  1930-1997  InputDispatcher         system_server                        E  channel 'e1c5ad4 com.ichi2.anki.debug/com.ichi2.anki.analytics.AnkiDroidCrashReportDialog (server)' ~ Channel is unrecoverably broken and will be disposed!
+2023-12-23 01:03:09.284  1930-1997  InputDispatcher         system_server                        E  channel '487fae6 com.ichi2.anki.debug/com.ichi2.anki.analytics.AnkiDroidCrashReportDialog (server)' ~ Channel is unrecoverably broken and will be disposed!
+2023-12-23 01:03:09.284  1930-1997  InputDispatcher         system_server                        E  channel '9852428 com.ichi2.anki.debug/com.ichi2.anki.analytics.AnkiDroidCrashReportDialog (server)' ~ Channel is unrecoverably broken and will be disposed!
+2023-12-23 01:03:14.306 10706-10739 cr_VariationsUtils      com.ichi2.anki.debug                 E  Failed reading seed file "/data/user/0/com.ichi2.anki.debug/app_webview/variations_seed": /data/user/0/com.ichi2.anki.debug/app_webview/variations_seed (No such file or directory)
+2023-12-23 01:03:14.719 10706-10773 Media                   com.ichi2.anki.debug                 E  dir /storage/emulated/0/AnkiDroid/collection.media
+2023-12-23 01:03:14.816 10706-10706 CollectionManager       com.ichi2.anki.debug                 E  blocked main thread for 284ms:
+                                                                                                    com.ichi2.anki.services.BootService.getColSafe(BootService.kt:68)
+2023-12-23 01:03:15.179 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  GoldfishAddressSpaceHostMemoryAllocator: ioctl_ping failed for device_type=5, ret=-1
+2023-12-23 01:03:16.698 10789-10825 cr_VariationsUtils      com.ichi2.anki.debug                 E  Failed reading seed file "/data/user/0/com.ichi2.anki.debug/app_webview_acra/variations_seed": /data/user/0/com.ichi2.anki.debug/app_webview_acra/variations_seed (No such file or directory)
+2023-12-23 01:03:16.912 10789-10789 ThemeUtils              com.ichi2.anki.debug                 E  View class com.ichi2.ui.FixedTextView is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).
+2023-12-23 01:03:16.978 10789-10789 ThemeUtils              com.ichi2.anki.debug                 E  View class com.ichi2.ui.FixedTextView is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).
+2023-12-23 01:03:17.028 10789-10826 cr_SpareChildConn       com.ichi2.anki.debug                 E  Failed to warm up the spare sandbox service
+2023-12-23 01:03:17.118 10789-10844 eglCodecCommon          com.ichi2.anki.debug                 E  GoldfishAddressSpaceHostMemoryAllocator: ioctl_ping failed for device_type=5, ret=-1
+2023-12-23 01:03:21.676 10789-10789 WindowManager           com.ichi2.anki.debug                 E  
+                                                                                                    android.view.WindowLeaked: Activity com.ichi2.anki.analytics.AnkiDroidCrashReportDialog has leaked window DecorView@cb52edc[AnkiDroidCrashReportDialog] that was originally added here
+                                                                                                    	at android.view.ViewRootImpl.<init>(ViewRootImpl.java:511)
+                                                                                                    	at android.view.WindowManagerGlobal.addView(WindowManagerGlobal.java:346)
+                                                                                                    	at android.view.WindowManagerImpl.addView(WindowManagerImpl.java:93)
+                                                                                                    	at android.app.Dialog.show(Dialog.java:329)
+                                                                                                    	at org.acra.dialog.CrashReportDialog.buildAndShowDialog(CrashReportDialog.kt:94)
+                                                                                                    	at org.acra.dialog.CrashReportDialog.onCreate(CrashReportDialog.kt:71)
+                                                                                                    	at com.ichi2.anki.analytics.AnkiDroidCrashReportDialog.onCreate(AnkiDroidCrashReportDialog.kt:44)
+                                                                                                    	at android.app.Activity.performCreate(Activity.java:7136)
+                                                                                                    	at android.app.Activity.performCreate(Activity.java:7127)
+                                                                                                    	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1271)
+                                                                                                    	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2893)
+                                                                                                    	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3048)
+                                                                                                    	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+                                                                                                    	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+                                                                                                    	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+                                                                                                    	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1808)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:106)
+                                                                                                    	at android.os.Looper.loop(Looper.java:193)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:6669)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+2023-12-23 01:04:03.942 10706-10706 AbstractFl...ntIntoCard com.ichi2.anki.debug                 E  *** set server com.ichi2.anki.ReviewerServer@defb51c content to <!doctype html><html class="mobile android linux js">    <head>        <title>AnkiDroid Flashcard</title>        <meta charset="utf-8">        <link rel="stylesheet" type="text/css" href="/assets/flashcard.css">        <link rel="stylesheet" type="text/css" href="/assets/mathjax/mathjax.css">        <style>        @font-face {font-family: "OpenSans-Cond"; font-weight: bolder; font-style: normal; src: url("/assets/fonts/OpenSans-CondBold.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans"; font-weight: bolder; font-style: normal; src: url("/assets/fonts/OpenSans-Bold.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans"; font-weight: lighter; font-style: italic; src: url("/assets/fonts/OpenSans-LightItalic.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans"; font-weight: lighter; font-style: normal; src: url("/assets/fonts/OpenSans-Light.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans-Cond"; font-weight: lighter; font-style: normal; src: url("/assets/fonts/OpenSans-CondLight.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans-Extra"; font-weight: bolder; font-style: normal; src: url("/assets/fonts/OpenSans-ExtraBold.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans"; font-weight: normal; font-style: italic; src: url("/assets/fonts/OpenSans-Italic.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans-Regular"; font-weight: normal; font-style: normal; src: url("/assets/fonts/OpenSans-Regular.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans"; font-weight: bolder; font-style: italic; src: url("/assets/fonts/OpenSans-BoldItalic.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans-Cond"; font-weight: lighter; font-style: italic; src: url("/assets/fonts/OpenSans-CondLightItalic.ttf");}
+                                                                                                    @font-face {font-family: "OpenSans-Extra"; font-weight: bolder; font-style: italic; src: url("/assets/fonts/OpenSans-ExtraBoldItalic.ttf");}
+                                                                                                    BODY {font-family: 'OpenSans';font-weight: normal;font-style: normal;font-stretch: normal;}        </style>                <script src="/assets/jquery.min.js"> </script>        <script src="/assets/scripts/card.js" type="text/javascript"> </script>        <script src="/assets/reviewer_extras_bundle.js"> </script>    </head>    <body class="card card1">        <div id="content">        <div id="qa"><style>.card {
+                                                                                                        font-family: arial;
+                                                                                                        font-size: 20px;
+                                                                                                        text-align: center;
+                                                                                                        color: black;
+                                                                                                        background-color: white;
+                                                                                                    }
+                                                                                                    </style>123</div>        </div>    </body></html>
+2023-12-23 01:04:03.980 10706-10881 chromium                com.ichi2.anki.debug                 E  [ERROR:gl_surface_egl.cc(335)] eglChooseConfig failed with error EGL_SUCCESS
+2023-12-23 01:04:04.137 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.137 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.230 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.230 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.290 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.290 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.332 10706-10881 chromium                com.ichi2.anki.debug                 E  [ERROR:gl_surface_egl.cc(335)] eglChooseConfig failed with error EGL_SUCCESS
+2023-12-23 01:04:04.346 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.347 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.402 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.402 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.456 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.456 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.491 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.491 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.528 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.528 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.568 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.568 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.611 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.611 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.658 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.658 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.707 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.707 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.755 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.755 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.804 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.804 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.854 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.854 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.889 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.889 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.936 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:04.936 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.534 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.534 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.573 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.573 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.613 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.613 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.655 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.655 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.699 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.699 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.739 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.739 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.778 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.778 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.818 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.818 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.850 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.850 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.885 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:05.885 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.089 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.089 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.139 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.139 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.178 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.179 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.227 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.227 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.271 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.271 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.333 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.333 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.370 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.371 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.453 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.453 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.502 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.502 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.549 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:14.549 10706-10787 eglCodecCommon          com.ichi2.anki.debug                 E  glUtilsParamSize: unknow param 0x000085b5
+2023-12-23 01:04:20.486 10706-10706 ACRA                    com.ichi2.anki.debug                 E  ACRA caught a NotImplementedError for com.ichi2.anki.debug
+                                                                                                    kotlin.NotImplementedError: An operation is not implemented: unhandled change type
+                                                                                                    	at com.ichi2.libanki.ChangeManager.notifySubscribers$AnkiDroid_amazonDebug(ChangeManager.kt:84)
+                                                                                                    	at com.ichi2.libanki.ChangeManagerKt$undoableOp$3$1.invokeSuspend(ChangeManager.kt:97)
+                                                                                                    	at com.ichi2.libanki.ChangeManagerKt$undoableOp$3$1.invoke(Unknown Source:14)
+                                                                                                    	at com.ichi2.libanki.ChangeManagerKt$undoableOp$3$1.invoke(Unknown Source:12)
+                                                                                                    	at kotlinx.coroutines.intrinsics.UndispatchedKt.startUndispatchedOrReturn(Undispatched.kt:89)
+                                                                                                    	at kotlinx.coroutines.BuildersKt__Builders_commonKt.withContext(Builders.common.kt:169)
+                                                                                                    	at kotlinx.coroutines.BuildersKt.withContext(Unknown Source:1)
+                                                                                                    	at com.ichi2.libanki.ChangeManagerKt.undoableOp(ChangeManager.kt:96)
+                                                                                                    	at com.ichi2.libanki.ChangeManagerKt$undoableOp$1.invokeSuspend(Unknown Source:19)
+                                                                                                    	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:33)
+                                                                                                    	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:106)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:873)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loop(Looper.java:193)
+                                                                                                    	at android.app.ActivityThread.main(ActivityThread.java:6669)
+                                                                                                    	at java.lang.reflect.Method.invoke(Native Method)
+                                                                                                    	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+                                                                                                    	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+                                                                                                    	Suppressed: kotlinx.coroutines.DiagnosticCoroutineContextException: [StandaloneCoroutine{Cancelling}@2608a0, Dispatchers.Main.immediate]
+2023-12-23 01:04:21.150 10789-10789 ThemeUtils              com.ichi2.anki.debug                 E  View class com.ichi2.ui.FixedTextView is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).
+2023-12-23 01:04:21.186 10789-10789 ThemeUtils              com.ichi2.anki.debug                 E  View class com.ichi2.ui.FixedTextView is an AppCompat widget that can only be used with a Theme.AppCompat theme (or descendant).
+2023-12-23 01:04:24.324  1930-1997  InputDispatcher         system_server                        E  channel '24a94cf com.ichi2.anki.debug/com.ichi2.anki.Reviewer (server)' ~ Channel is unrecoverably broken and will be disposed!
+2023-12-23 01:04:24.324  1930-1997  InputDispatcher         system_server                        E  channel 'aeab8ce com.ichi2.anki.debug/com.ichi2.anki.DeckPicker (server)' ~ Channel is unrecoverably broken and will be disposed!
